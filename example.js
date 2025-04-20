@@ -1,4 +1,4 @@
-import db from "./.cache/db.json";
+import db from "./.cache/db.json" assert { type: "json" };
 
 const groupedByDate = db.reduce((acc, item) => {
   const date = new Date(item.year, item.month - 1, item.day);
