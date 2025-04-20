@@ -2,19 +2,21 @@
   "name": "kalendarz-swiat-nietypowych-parser",
   "version": "1.0.3",
   "main": "src/index.js",
-  "repository": "git@github.com:dzek69/kalendarz-swiat-nietypowych-ics-google-exporter.git",
+  "repository": "https://github.com/dzek69/kalendarz-swiat-nietypowych-parser",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "nodemon --watch src src/index",
-    "createCalendar": "node src"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.4"
+    "createCalendar": "node createCalendar.js"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
+    "cheerio": "1.0.0-rc.12",
     "fs-extra": "^8.1.0",
     "html-entities": "^1.2.1",
     "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "nodemon": "^3.1.4"
   }
 }
